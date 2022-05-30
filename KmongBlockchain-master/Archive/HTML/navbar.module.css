@@ -1,0 +1,189 @@
+p {
+    font-size: 17px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.navbar {
+    max-width: 500px;
+    width: 100%;
+    height: var(--navbar-height);
+    background-color: #f89cc5;
+    position: fixed;
+    overflow-x: clip;
+    z-index: 9999;
+}
+
+.navbar .sidemenu {
+    width: var(--side-menu-width);
+    height: 100vh;
+    bottom: 0;
+    left: calc(var(--side-menu-width) * -1);
+    top: var(--navbar-height);
+    max-width: 500px;
+    background-color: #f89cc5;
+    position: absolute;
+    transition: 0.4s;
+    background: #f89cc5;
+}
+
+.navbar .sidemenu.active {
+    left: 0;
+}
+
+.sidemenuline {
+    width: var(--side-menu-width);
+    height: 100vh;
+    bottom: 0;
+    left: calc(var(--side-menu-width) * -1);
+    top: var(--navbar-height);
+    max-width: 500px;
+    background-color: #f89cc5;
+    background: #f89cc5;
+}
+
+.headerflex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headeflex2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerimg {
+    position: absolute;
+    top: 12px;
+    width: 144px;
+    height: 32px;
+}
+
+.view_detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.sidemenuimg {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+
+.titleimgfleximg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+a[type="s"] {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a[type="s"]:visited,
+hover,
+active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* 
+a[href="/test",],
+a[href="/write"],
+a[href="/story"],
+a[href="/write"],
+a[href="/endstory"],
+a[href="https://www.instagram.com/dino33/"],
+a[href="https://instagram.com/youtheroom?igshid=YmMyMTA2M2Y="]:visited,
+:hover,
+:active {
+    color: #ffffff;
+} */
+
+.sidelogo {
+    margin-top: 42px;
+    width: 52%;
+}
+
+.sideflextextscope {
+    margin-top: 18%;
+    height: 30%;
+    text-align: center;
+    font-family: CookieRun-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    white-space: nowrap;
+    color: #ffffff;
+    flex-wrap: nowrap;
+}
+
+.headline {
+    color: #e9ecef;
+    width: 210px;
+    height: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.sideflextextscope {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.story,
+.test,
+.diary,
+.endstory {
+    width: 72px;
+    height: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dino_insta,
+.youtheroom_insta {
+    width: 184px;
+}
+
+.instagram_layout {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dino_insta {
+    margin-bottom: 16px;
+}

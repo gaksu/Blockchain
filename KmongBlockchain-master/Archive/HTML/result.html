@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlockChain Demo</title>
+</head>
+
+<body>
+    <style>
+        .mainSection {
+            display: flex;
+            flex-direction: row;
+            margin-left: 113px;
+            margin-right: 125px;
+            justify-content: center;
+        }
+        
+        #section1 {
+            padding-top: 17px;
+            padding-left: 25px;
+            padding-left: 23px;
+            padding-right: 23px;
+            border: 3px solid #5d5fef;
+            border-radius: 30px;
+            margin-right: 74px;
+            width: 280px;
+            height: 280px;
+        }
+        
+        #section2 {
+            padding-top: 17px;
+            padding-left: 23px;
+            padding-right: 23px;
+            border: 3px solid #5d5fef;
+            border-radius: 30px;
+            /* margin-right: 74px; */
+            width: 280px;
+            height: 280px;
+            margin-right: 74px;
+        }
+        
+        #section3 {
+            padding-top: 17px;
+            padding-left: 23px;
+            padding-right: 23px;
+            border: 3px solid #5d5fef;
+            border-radius: 30px;
+            width: 280px;
+            height: 280px;
+        }
+        
+        #upload,
+        #download,
+        #disconnect {
+            width: 60px;
+            height: 60px;
+        }
+        
+        #maintitle {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 96px;
+            line-height: 116px;
+            color: #305987;
+            padding-left: 60px;
+            padding-right: 88px;
+        }
+        
+        #title {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            /* identical to box height */
+            color: #1d3c5f;
+        }
+        
+        #subsection {
+            display: flex;
+            flex-direction: row;
+            margin-top: 106px;
+            justify-content: space-around;
+        }
+        
+        #subscope1 {
+            width: 450px;
+            height: 270px;
+            background: rgba(224, 229, 230, 0.39);
+            border-radius: 30px;
+            margin-right: 165px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 46px;
+        }
+        
+        #subscope2 {
+            width: 450px;
+            height: 270px;
+            background: rgba(224, 229, 230, 0.39);
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-bottom: 46px;
+        }
+        
+        #subsctiontitle {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 34px;
+            color: #000000;
+        }
+        
+        #subsectionnumber {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 96px;
+            color: #021b37;
+        }
+        
+        #customers {
+            font-family: "Open Sans";
+            width: 100%;
+            margin-top: 120px;
+            margin-bottom: 120px;
+            border: 3px solid #0f2947;
+            border-radius: 30px;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 46px;
+            color: #021b37;
+        }
+        
+        #customers td,
+        #customers th {
+            padding-top: 27px;
+            padding-left: 41px;
+            padding-bottom: 25px;
+        }
+        /* #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+         */
+        
+        #customers tr:hover {
+            color: #305987;
+        }
+        
+        #customers th {
+            text-align: left;
+            border-radius: 30px 30px 0px 0px;
+            background-color: #021b37;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 59px;
+            line-height: 80px;
+            color: #ffff;
+            height: 60px;
+        }
+        
+        #customers:nth-lst-of-type() {
+            border-radius: 0px 0px 30px 30px;
+        }
+        
+        #customers tr:nth-child(4) {
+            background-color: #ecc5c5;
+        }
+        
+        #customers tr:nth-child(7) {
+            background-color: #d3e7ff;
+        }
+    </style>
+
+    <h1 id="maintitle">Data Share</h1>
+
+    <div class="mainSection">
+        <div id="section1">
+            <img id="upload" src="./assets/upload.png" />
+            <p id="title">Upload file(s)</p>
+            <p>
+                Upload files to the blockchain using a key and generate a unique hash to be shared with the intended recipient
+            </p>
+        </div>
+
+        <div id="section2">
+            <img id="download" src="./assets/download.png" />
+            <p id="title">Dodwnload file(s)</p>
+            <p>
+                Download files from the blockchain using the unique hash and the key generated by the uploader
+            </p>
+        </div>
+        <div id="section3">
+            <img id="disconnect" src="./assets/disconnect.png" />
+            <p id="title">Disconnect</p>
+            <p>
+                Disconnect from the blockchain. To get access to the blockchain, connect to the blockchain again
+            </p>
+        </div>
+    </div>
+
+    <div id="subsection">
+        <div id="subscope1">
+            <p id="subsctiontitle">
+                Total Connected Node(s)
+                <br />
+                <br />
+                <span id="subsectionnumber">2</span>
+            </p>
+        </div>
+        <div id="subscope2">
+            <p id="subsctiontitle">
+                Total Block(s)
+                <br />
+                <br />
+                <span id="subsectionnumber">4</span>
+            </p>
+        </div>
+    </div>
+    <table id="customers">
+        <tr>
+            <th>Block 1</th>
+        </tr>
+        <tr>
+            <td>Timestamp</td>
+        </tr>
+        <tr>
+            <td>Proof</td>
+        </tr>
+        <tr>
+            <td>Previous hash</td>
+        </tr>
+        <tr>
+            <td>Sender</td>
+        </tr>
+        <tr>
+            <td>Receiver</td>
+        </tr>
+        <tr>
+            <td>Shared file</td>
+        </tr>
+        <tr>
+            <td>Action</td>
+        </tr>
+    </table>
+</body>
+
+</html>

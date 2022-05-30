@@ -1,0 +1,124 @@
+/*--------------------------------------------------------------
+# Blockchain Services
+--------------------------------------------------------------*/
+
+.blockchain-services {
+    padding-top: 0px;
+    padding-bottom: 15px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.blockchain-services .columns {
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockchain-services .icon-box {
+    padding: 20px;
+    color: #1d3c5f;
+    background: #fffff5;
+    border-radius: 30px;
+    transition: 0.3s;
+    border: 3px solid #5d5fef;
+    border-radius: 30px;
+}
+
+.blockchain-services .icon {
+    margin: 0 0 15px 0;
+}
+
+.blockchain-services .icon i {
+    color: #021b37;
+    font-size: 36px;
+}
+
+.blockchain-services .title {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.blockchain-services .title a {
+    color: #5f687b;
+    transition: 0.3s;
+}
+
+.blockchain-services .icon-box:hover {
+    border-color: #eaecef;
+    background: #1d3c5f;
+    color: #fffff5;
+}
+
+.blockchain-services .icon-box:hover .title a {
+    color: #fffff5;
+}
+
+.blockchain-services .description {
+    line-height: 24px;
+    font-size: 14px;
+}
+
+
+/*--------------------------------------------------------------
+# Counts
+--------------------------------------------------------------*/
+
+.counts {
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+.counts .counters span {
+    font-size: 48px;
+    display: block;
+    color: #021b37;
+    font-weight: 700;
+}
+
+.counts .counters p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/*----------------------------------------------------------------
+# Design to show the message1 and message2
+------------------------------------------------------------------*/
+
+.alert-custom {
+    background-color: #ffe6f5 !important;
+    color: black !important;
+}
+
+
+/*----------------------------------------------------------------
+# Design the block
+------------------------------------------------------------------*/
+
+.card-header {
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 10px;
+    background: linear-gradient(white, #4e84c1);
+    color: #fffff5;
+    border-radius: 30px;
+}
+
+.card {
+    border: 3px solid #0f2947;
+    border-radius: 30px;
+}
+
+.card-body .prev-hash {
+    color: yellow !important;
+}
+
+.card .h4 {
+    border: 1px;
+    color: #008000;
+}
